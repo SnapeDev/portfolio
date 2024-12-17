@@ -9,17 +9,17 @@
   <body class="bg-white-100 text-black">
     <!-- Header -->
     <header
-      class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-10 shadow-md"
+      class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-10 "
     >
-      <div class="text-lg font-bold">
+      <div class="text-xl font-bold">
         <a href="index.html"
           ><span class="text-blue-600">&#9632;</span> Snape Dev</a
         >
       </div>
       <nav class="flex gap-10 text-gray-600 text-sm">
-        <a href="index.html" class="hover:text-blue-600">ABOUT ME</a>
-        <a href="projects.html" class="hover:text-blue-600">PROJECTS</a>
-        <a href="#contact" class="hover:text-blue-600">CONTACT</a>
+        <a href="index.html" class="hover:text-blue-600 ">ABOUT ME</a>
+        <a href="projects.html" class="hover:text-blue-600 ">PROJECTS</a>
+        <a href="contact.html" class="hover:text-blue-600 ">CONTACT</a>
       </nav>
     </header>
 
@@ -35,12 +35,9 @@
       <div class="flex flex-col items-center gap-10 font-sans">
         <!-- Project 1 -->
         <div
-          class="bg-white w-[90%] md:w-[700px] md:h-[350px] shadow-lg p-5 flex items-center gap-10  shadow: -8px 0px 8px rgba(0, 0, 0, 0.4),
+          class="bg-white w-[90%] md:w-[700px] md:h-[350px] shadow-lg p-5 flex items-center gap-10 relative shadow: -8px 0px 8px rgba(0, 0, 0, 0.4),
          "
-          
-           
-          
-        >
+ >
           <!-- Text Content -->
           <div class="flex-1">
             <h3 class="text-xl font-bold text-blue-600 mb-2 pl-4 ml-[-1.2rem] relative">
@@ -50,15 +47,15 @@
             
             
           </br>
-            <p class="text-gray-700 font-mono font-light text-sm">
+            <p class="text-black-600 font-sans font-extralight text-base mb-20">
               Designed and developed a calculator application with responsive
               features. Built using HTML, CSS, and JavaScript to handle accurate
               calculations with a clean UI.
             </p>
-            <span
-              class="inline-block bg-blue-600 text-white text-sm rounded-full px-3 py-1 mt-10 "
+            <a href="https://snapedev.github.io/calculator/" target="_blank"><span
+              class="inline-block bg-blue-600 text-white text-sm  w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700"
               >Live</span
-            >
+            ></a>
           </div>
 
           <!-- Image Content -->
@@ -72,44 +69,67 @@
         </div>
         <!-- Project 2 -->
         <div
-          class="bg-white w-[90%] md:w-[700px] shadow-lg rounded-lg p-5 shadow-gray-500/50"
-          style="
-            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3),
-              -2px -2px 5px rgba(0, 0, 0, 0.1);
-          "
-        >
-          <h3 class="text-xl font-bold text-red-600 mb-2">Friend Ferry</h3>
-          <p class="text-gray-700">
-            Developed a full-stack application that allows users to find and
-            book companions for social events. Built using Figma, HTML, CSS,
-            JavaScript, and Node.js for the back-end.
-          </p>
-          <span
-            class="inline-block bg-red-600 text-white text-sm rounded-full px-3 py-1 mt-3"
-            >Live</span
-          >
+        class="bg-white w-[90%] md:w-[700px] md:h-[350px] shadow-lg p-5 flex items-center gap-10 shadow-lg relative"
+      >
+        <!-- Image Content -->
+        <div class="w-1/2 flex-shrink-0">
+          <img
+            src="images/hobby.png"
+            alt="Hobby site"
+            class="w-auto h-auto"
+          />
         </div>
-
+      
+        <!-- Text Content -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold text-red-500 mb-2 pr-4 mr-[-1.2rem] relative text-right">
+            Hobby Site
+            <span class="absolute right-0 top-[-0.5rem] bottom-[-0.5rem] w-9 border-r-8 border-red-500"></span>
+          </h3>
+      </br>
+          <p class="text-black-600 font-sans font-extralight text-base mb-20">
+            A personal hobby site built using HTML and CSS. The site showcases various activities and interests, with a clean and simple layout to enhance user experience. It features a responsive design, ensuring it works seamlessly across different devices.
+          </p>
+      
+          <a href="https://snapedev.github.io/calculator/" target="_blank"><span class="inline-block bg-red-500 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute right-0 bottom-0 mb-4 mr-4 hover:bg-red-600 ">
+            Live
+          </span></a>
+        </div>
+      </div>
+      
         <!-- Project 3 -->
         <div
-          class="bg-white w-[90%] md:w-[700px] shadow-lg rounded-lg p-5 shadow-gray-500/50"
-          style="
-            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3),
-              -2px -2px 5px rgba(0, 0, 0, 0.1);
-          "
-        >
-          <h3 class="text-xl font-bold text-green-600 mb-2">Task Tracker</h3>
-          <p class="text-gray-700">
-            Created a productivity-focused task tracking app. Features include
-            task management, deadlines, and progress charts. Built with React.js
-            for the front-end and Firebase for the back-end.
+        class="bg-white w-[90%] md:w-[700px] md:h-[350px] shadow-lg p-5 flex items-center relative gap-10  shadow: -8px 0px 8px rgba(0, 0, 0, 0.4),
+       "
+>
+        <!-- Text Content -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold text-blue-600 mb-2 pl-4 ml-[-1.2rem] relative">
+           Rabbit Game
+            <span class="absolute left-0 top-[-0.5rem] bottom-[-0.5rem] w-9 border-l-8 border-blue-600"></span>
+          </h3>
+          
+          
+        </br>
+          <p class="text-black-600 font-sans font-extralight text-base w-full max-w-[700px] mb-20">
+            A fun web-based game where the player helps a rabbit collect carrots. Built using object-oriented programming (OOP) principles, the game features an interactive navigation.
           </p>
-          <span
-            class="inline-block bg-green-600 text-white text-sm rounded-full px-3 py-1 mt-3"
+          <a href="https://snapedev.github.io/OOP/" target="_blank"><span
+            class="inline-block bg-blue-600 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700"
             >Live</span
-          >
+          ></a>
+        </div>
+
+        <!-- Image Content -->
+        <div class="w-1/2 flex-shrink-0">
+          <img
+            src="images/oop.png"
+            alt="OOP project"
+            class="w-auto h-auto"
+          />
         </div>
       </div>
     </section>
+    <script src="page.js"></script>
   </body>
 </html>
