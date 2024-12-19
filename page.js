@@ -1,8 +1,10 @@
-const links = document.querySelectorAll("nav a");
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerMenu = document.getElementById("burger-menu");
+  const dropdownMenu = document.getElementById("dropdown-menu");
 
-// Highlight the active link based on the current page URL
-links.forEach((link) => {
-  if (window.location.pathname === link.getAttribute("href")) {
-    link.classList.add("text-blue-700");
+  if (burgerMenu && dropdownMenu) {
+    burgerMenu.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
+    });
   }
 });

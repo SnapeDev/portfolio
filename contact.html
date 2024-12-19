@@ -7,26 +7,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-white text-black">
+    <!-- Header -->
     <header
       class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-10"
     >
       <div class="text-xl font-bold">
-        <a href="index.html"
-          ><span class="text-blue-600">&#9632;</span> Snape Dev</a
-        >
+        <a href="index.html">
+          <span class="text-blue-600">&#9632;</span> Snape Dev
+        </a>
       </div>
-      <nav class="flex gap-10 text-gray-600 text-sm">
-        <a href="index.html" class="hover:text-blue-600 active:text-blue-600"
+      <nav class="hidden md:flex gap-10 text-gray-600 text-sm">
+        <a href="index.html" class="hover:text-blue-600">ABOUT ME</a>
+        <a href="projects.html" class="hover:text-blue-600">PROJECTS</a>
+        <a href="contact.html" class="hover:text-blue-600">CONTACT</a>
+      </nav>
+      <!-- Burger Menu Button -->
+      <button
+        id="burger-menu"
+        class="md:hidden text-gray-600 focus:outline-none"
+      >
+        &#9776;
+      </button>
+    </header>
+    <div
+      id="dropdown-menu"
+      class="hidden fixed top-16 left-0 w-full h-full bg-white shadow-lg z-20 flex items-center justify-center md:hidden"
+    >
+      <div class="text-center">
+        <a href="index.html" class="block py-2 text-lg hover:text-blue-600"
           >ABOUT ME</a
         >
-        <a href="projects.html" class="hover:text-blue-600 active:text-blue-600"
+        <a href="projects.html" class="block py-2 text-lg hover:text-blue-600"
           >PROJECTS</a
         >
-        <a href="contact.html" class="hover:text-blue-600 active:text-blue-600"
+        <a href="contact.html" class="block py-2 text-lg hover:text-blue-600"
           >CONTACT</a
         >
-      </nav>
-    </header>
+      </div>
+    </div>
 
     <!-- Contact Section -->
     <section
@@ -158,5 +176,6 @@
           }
         });
     </script>
+    <script src="page.js"></script>
   </body>
 </html>

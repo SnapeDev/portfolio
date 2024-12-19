@@ -9,19 +9,43 @@
   <body class="bg-white-100 text-black">
     <!-- Header -->
     <header
-      class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-10 "
+    class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-10"
+  >
+    <div class="text-xl font-bold">
+      <a href="index.html">
+        <span class="text-blue-600">&#9632;</span> Snape Dev
+      </a>
+    </div>
+    <nav class="hidden md:flex gap-10 text-gray-600 text-sm">
+      <a href="index.html" class="hover:text-blue-600">ABOUT ME</a>
+      <a href="projects.html" class="hover:text-blue-600">PROJECTS</a>
+      <a href="contact.html" class="hover:text-blue-600">CONTACT</a>
+    </nav>
+    <!-- Burger Menu Button -->
+    <button
+      id="burger-menu"
+      class="md:hidden text-gray-600 focus:outline-none"
     >
-      <div class="text-xl font-bold">
-        <a href="index.html"
-          ><span class="text-blue-600">&#9632;</span> Snape Dev</a
-        >
-      </div>
-      <nav class="flex gap-10 text-gray-600 text-sm">
-        <a href="index.html" class="hover:text-blue-600 ">ABOUT ME</a>
-        <a href="projects.html" class="hover:text-blue-600 ">PROJECTS</a>
-        <a href="contact.html" class="hover:text-blue-600 ">CONTACT</a>
-      </nav>
-    </header>
+      &#9776;
+    </button>
+  </header>
+  
+  <div
+  id="dropdown-menu"
+  class="hidden fixed top-16 left-0 w-full h-full bg-white shadow-lg z-20 flex items-center justify-center md:hidden"
+>
+  <div class="text-center">
+    <a href="index.html" class="block py-2 text-lg hover:text-blue-600"
+      >ABOUT ME</a
+    >
+    <a href="projects.html" class="block py-2 text-lg hover:text-blue-600"
+      >PROJECTS</a
+    >
+    <a href="contact.html" class="block py-2 text-lg hover:text-blue-600"
+      >CONTACT</a
+    >
+  </div>
+</div>
 
     <!-- Projects Section -->
     <section class="py-10">
@@ -53,7 +77,7 @@
               calculations with a clean UI.
             </p>
             <a href="https://snapedev.github.io/calculator/" target="_blank"><span
-              class="inline-block bg-blue-600 text-white text-sm  w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700"
+              class="inline-block bg-blue-600 text-white text-sm  w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700 min-w-[65px]"
               >Live</span
             ></a>
           </div>
@@ -91,7 +115,7 @@
             A personal hobby site built using HTML and CSS. The site showcases various activities and interests, with a clean and simple layout to enhance user experience. It features a responsive design, ensuring it works seamlessly across different devices.
           </p>
       
-          <a href=" https://snapedev.github.io/hobbie-website/" target="_blank"><span class="inline-block bg-red-500 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute right-0 bottom-0 mb-4 mr-4 hover:bg-red-600 ">
+          <a href=" https://snapedev.github.io/hobbie-website/" target="_blank"><span class="inline-block bg-red-500 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute right-0 bottom-0 mb-4 mr-4 hover:bg-red-600 min-w-[65px]"> 
             Live
           </span></a>
         </div>
@@ -115,7 +139,7 @@
             A fun web-based game where the player helps a rabbit collect carrots. Built using object-oriented programming (OOP) principles, the game features an interactive navigation.
           </p>
           <a href="https://snapedev.github.io/OOP/" target="_blank"><span
-            class="inline-block bg-blue-600 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700"
+            class="inline-block bg-blue-600 text-white text-sm w-[10%] rounded-full px-5 py-1 mt-14 absolute left-0 bottom-0 mb-4 ml-4 hover:bg-blue-700 min-w-[65px]"
             >Live</span
           ></a>
         </div>
